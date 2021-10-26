@@ -1,6 +1,5 @@
 #include "headers/drawer.hpp"
 
-
 int main()
 {
     // creating window
@@ -8,16 +7,9 @@ int main()
     
     sf::RenderWindow window( sf::VideoMode(width, height), "Visual Sorter", sf::Style::Close | !sf::Style::Resize);
     
-    // creating drawer
+    // instantiating drawer
     Drawer squ;
     
-    /*
-    sf::RectangleShape square(sf::Vector2f(200.0f, 200.0f));
-    
-    square.setFillColor(sf::Color::Red);
-    
-    square.setPosition(20.0f, 20.0f);
-    */
     
     // program loop
     while (window.isOpen()) {
@@ -35,8 +27,7 @@ int main()
             }
         }
         
-        
-        //window.draw(squ.square);
+        // render
         squ.display(&window);
         window.display();
     }
