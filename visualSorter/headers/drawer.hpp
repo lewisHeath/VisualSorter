@@ -19,6 +19,7 @@ class Drawer
 public:
     Drawer();
     void display(sf::RenderWindow* window);
+    void updatePosition(sf::RenderWindow* window);
 };
 
 #endif /* drawer_hpp */

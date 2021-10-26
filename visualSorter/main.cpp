@@ -27,6 +27,9 @@ int main()
             }
         }
         
+        // move the drawer
+        squ.updatePosition(&window);
+        
         // render
         squ.display(&window);
         window.display();
